@@ -20,7 +20,7 @@ main {
   flex-direction: column;
   gap: 2rem;
 }
-section{
+section {
   width: 94%;
   margin: 0 auto;
   display: flex;
@@ -28,7 +28,7 @@ section{
   justify-content: center;
   gap: 2rem;
 }
-div{
+div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,11 +40,11 @@ span {
   display: grid;
   place-items: center;
   font-size: 2.25rem;
-  border: solid 1px #fff;
+  border: solid 1px rgba(255, 255, 255, 0.5);
   border-radius: 0.5rem;
+  cursor: pointer;
 }
-.glass,
-span {
+.glass {
   background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0),
@@ -54,4 +54,32 @@ span {
   backdrop-filter: blur(2rem);
   box-shadow: -2px 4px 12px 1px rgba(90, 90, 90, 0.212);
   border: 0.1px solid rgba(255, 255, 255, 0.2);
+}
+.animate{
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.shift-down:hover{
+  transform: translateY(0.5rem);
+}
+.pop:hover{
+  transform: scale(1.5);
+}
+.dump:hover{
+  transform: scale(0.5);
+}
+.shift-up:hover{
+  transform: translateY(-0.5rem);
+}
+.skew-right:hover{
+  transform: rotate(30deg);
+}
+.shift-left:hover{
+  transform: translateX(-0.5rem);
+}
+.skew-left-pop:hover{
+  transform: rotate(-10deg) scale(2) ;
 }
