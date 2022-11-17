@@ -8,6 +8,7 @@
 
 /** Setting the background color & animation **/
 body {
+  max-width: 1440px;
 	background: linear-gradient(-90deg, #f54f1c, #971f7d, #237fd5, #60c541);
 	background-size: 250%;
 	animation: gradient 15s ease-in-out infinite;
