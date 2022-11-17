@@ -8,12 +8,10 @@
 
 /** Setting the background color & animation **/
 body {
-  max-width: 1440px;
-  margin: 0 auto;
-	background: linear-gradient(-90deg, #f54f1c, #971f7d, #237fd5, #60c541);
-	background-size: 250%;
-	animation: gradient 15s ease-in-out infinite;
-	min-height: 100vh;
+  background: linear-gradient(-90deg, #f54f1c, #971f7d, #237fd5, #60c541);
+  background-size: 250%;
+  animation: gradient 15s ease-in-out infinite;
+  min-height: 100vh;
   color: #fff;
 }
 
@@ -32,7 +30,8 @@ body {
 
 /** Our main container for each section **/
 main {
-  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 2rem 0;
   display: flex;
   flex-direction: column;
